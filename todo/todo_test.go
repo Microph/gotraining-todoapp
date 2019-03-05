@@ -13,3 +13,10 @@ func TestNew(t *testing.T) {
 	}
 	os.Remove("2019-02-26.td")
 }
+
+func TestPyramid(t *testing.T) {
+	err := todo.Pyramid("7")
+	if err != nil {
+		t.Error("fail to print pyramid:", err)
+	}
+}

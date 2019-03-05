@@ -19,6 +19,7 @@ func init() {
 	rootCmd.AddCommand(addCmd)
 	rootCmd.AddCommand(editCmd)
 	rootCmd.AddCommand(deleteCmd)
+	rootCmd.AddCommand(pyramidCmd)
 }
 
 func Execute() {

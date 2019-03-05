@@ -105,3 +105,20 @@ func Edit(name string, n string, newItem string) error {
 	fmt.Printf("%s <= %s) %s\n", name, n, newItem)
 	return nil
 }
+
+//Print pyramid
+func Pyramid(input string) error {
+	num, err := strconv.Atoi(input)
+	if err != nil {
+		fmt.Println("It's not a number")
+	} else {
+		for i := 1; i <= num; i++ {
+			for j := 0; j < i; j++ {
+				fmt.Print("*")
+			}
+			fmt.Println()
+		}
+	}
+
+	return nil
+}
